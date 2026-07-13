@@ -1,139 +1,219 @@
 :root {
-    --bg-dark: #0f1115;
-    --bg-panel: #1a1c23;
-    --bg-panel-hover: #23262f;
-    --text-main: #f0f2f5;
-    --text-muted: #9ba0aa;
-    --accent-red: #e63946;
-    --accent-hover: #ff4d5a;
-    --border-color: #2c303a;
-    --font-body: "Roboto", sans-serif;
-    --radius: 8px;
-    --radius-lg: 16px;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --shadow-glow: 0 0 20px rgba(230, 57, 70, 0.4);
+  --bg-dark: #0f1115;
+  --bg-panel: #1a1c23;
+  --bg-panel-hover: #23262f;
+  --text-main: #f0f2f5;
+  --text-muted: #9ba0aa;
+  --accent-red: #e63946;
+  --accent-hover: #ff4d5a;
+  --border-color: #2c303a;
+  --font-body: "Roboto", sans-serif;
+  --radius: 8px;
+  --radius-lg: 16px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-glow: 0 0 20px rgba(230, 57, 70, 0.4);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    min-width: 1200px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    background: var(--bg-panel);
+  min-width: 1200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: var(--bg-panel);
 }
 
 .list-reset {
-    list-style: none;
+  list-style: none;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: var(--radius);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.section-title {}
-
+.section-title {
+}
 
 /*HEADER*/
 
 .header {
-    display: fixed;
-    height: 100px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--bg-dark);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
+  display: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--bg-dark);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 65px;
 }
 
 .nav_list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .logotype {
-    color: var(--text-main);
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
+  color: var(--text-main);
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
 }
 
 .logo {
-    color: var(--accent-red);
+  color: var(--accent-red);
 }
 
 .nav_link {
-    position: relative;
-    padding-bottom: 5px;
-    font-size: 18px;
-    color: var(--text-main);
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    transition: 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: var(--text-main);
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  transition: 0.3s ease;
 }
 
 .nav_link:hover {
-    color: var(--accent-hover);
+  color: var(--accent-hover);
 }
 
 .nav_link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--accent-hover);
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-hover);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
 }
 
 .nav_link:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-.header_account {
-    padding: 15px 25px;
-    color: var(--text-main);
-    font-size: 18px;
-    font-weight: 500;
-    background-color: var(--bg-panel);
-    border-radius: var(--radius);
-    border: 1px solid var(--border-color);
-    transition: 0.3s ease;
+.header_account,
+.btn_services-shop {
+  padding: 15px 25px;
+  color: var(--text-main);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--bg-panel);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  transition: 0.3s ease;
 }
 
 .header_account:hover {
-    background-color: var(--bg-panel-hover);
-    border: 1px solid var(--text-main);
+  background-color: var(--bg-panel-hover);
+  border: 1px solid var(--text-main);
 }
 
-
 /*MAIN*/
+
+/*HERO*/
+
+.hero {
+  background: linear-gradient(to bottom, rgba(15, 17, 21, 0.8), var(--bg-dark)),
+    url(https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1920)
+      center / cover;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px;
+  gap: 40px;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero_title {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--text-main);
+}
+
+.hero_subtitle {
+  color: var(--accent-red);
+}
+
+.hero_disc {
+  font-size: 20px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.hero_services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  color: var(--text-main);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.btn_services-online {
+  background-color: var(--accent-red);
+  transition: 0.3s ease;
+}
+
+.btn_services-online:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn_services-shop {
+  padding: 15px 25px;
+  color: var(--text-main);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--bg-panel);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  transition: 0.3s ease;
+}
+
+.btn_services-shop:hover {
+  background-color: var(--bg-panel-hover);
+  border: 1px solid var(--text-main);
+}
