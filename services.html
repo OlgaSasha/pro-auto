@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container header_container">
@@ -32,107 +33,261 @@
     <main class="main">
       <!--Services-->
 
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <div class="services_content">
-            <h1 class="services_title">
+            <h2 class="services_title">
               Наши<span class="services_subtitle"> услуги </span>
-            </h1>
+            </h2>
             <p class="services_disc">
               От планового ТО до сложного ремонта двигателя. Доверьте свой
-              автомобиль<br />
+              автомобиль
+              <br />
               профессионалам.
             </p>
 
             <div class="about_block">
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/key-white.png" alt="key" class="services_img">
+                  <img
+                    src="images/key-white.png"
+                    alt="key"
+                    class="services_img"
+                  />
                   <p class="about_services">Диагностика</p>
                 </div>
-                
+
                 <p class="about_text services_text">
                   Компьютерная диагностика всех систем автомобиля. Чтение и
                   сброс ошибок.
                 </p>
-                <span class="services_price">
-                  от 1 500 ₽
-                </span>
+                <span class="services_price"> от 1 500 ₽ </span>
               </div>
 
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/oil-white.png" alt="" class="services_img">
+                  <img src="images/oil-white.png" alt="" class="services_img" />
                   <p class="about_services">Замена масла и ТО</p>
                 </div>
-               
+
                 <p class="about_text services_text">
                   Замена масла в ДВС и КПП, замена всех фильтров, проверка
                   уровня жидкостей.
                 </p>
-                <span class="services_price">
-                  от 2 000 ₽
-                </span>
+                <span class="services_price"> от 2 000 ₽ </span>
               </div>
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/tools-white.png" alt="" class="services_img">
+                  <img
+                    src="images/tools-white.png"
+                    alt=""
+                    class="services_img"
+                  />
                   <p class="about_services">Ходовая часть</p>
                 </div>
-                
+
                 <p class="about_text services_text">
                   Диагностика и ремонт подвески, замена амортизаторов, рычагов,
                   сайлентблоков.
                 </p>
-                <span class="services_price">
-                  от 1 200 ₽
-                </span>
+                <span class="services_price"> от 1 200 ₽ </span>
               </div>
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/oil-white.png" alt="" class="services_img">
+                  <img src="images/oil-white.png" alt="" class="services_img" />
                   <p class="about_services">Автоэлектрика</p>
                 </div>
-             
+
                 <p class="about_text services_text">
                   Ремонт проводки, установка сигнализаций, аудиосистем,
                   парктроников..
                 </p>
-                <span class="services_price">
-                  от 2 500 ₽
-                </span>
+                <span class="services_price"> от 2 500 ₽ </span>
               </div>
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/snow-white.png" alt="" class="services_img">
+                  <img
+                    src="images/snow-white.png"
+                    alt=""
+                    class="services_img"
+                  />
                   <p class="about_services">Кондиционеры</p>
                 </div>
-               
+
                 <p class="about_text services_text">
                   Заправка, чистка и ремонт систем кондиционирования автомобиля.
                 </p>
-                <span class="services_price">
-                  от 1 800 ₽
-                </span>
+                <span class="services_price"> от 1 800 ₽ </span>
               </div>
               <div class="about_card">
                 <div class="services_icon">
-                  <img src="images/car-white.png" alt="" class="services_img">
+                  <img src="images/car-white.png" alt="" class="services_img" />
                   <p class="about_services">Шиномонтаж</p>
                 </div>
-               
+
                 <p class="about_text services_text">
                   Сезонная смена резины, балансировка, ремонт проколов и
                   порезов.
                 </p>
-                <span class="services_price">
-                  от 1 600 ₽
-                </span>
+                <span class="services_price"> от 1 600 ₽ </span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!--BOOKING-->
+      <section class="booking">
+        <div class="container">
+          <div class="booking_content">
+            <h2 class="services_title">
+              онлайн<span class="services_subtitle"> запись </span>
+            </h2>
+            <div class="booking_form">
+              <div class="booking_form-left">
+                <p class="booking_form-disc">Запишитесь прямо сейчас</p>
+                <p class="booking_form-text">
+                  Оставьте заявку, и наш мастер-приемщик свяжется с вами в
+                  течение 10 минут для подтверждения времени.
+                </p>
+                <ul class="booking_form-list list-reset">
+                  <li class="booking_form-item">Скидка 5% при записи онлайн</li>
+                  <li class="booking_form-item">Гарантия на все виды работ</li>
+                  <li class="booking_form-item">
+                    Комфортная зона ожидания с Wi-Fi
+                  </li>
+                </ul>
+              </div>
+              <div class="booking_form-right">
+                <form class="form_online" action="#">
+                  <label class="lable_name" for="name">Ваше имя</label>
+                  <input
+                    class="input_row"
+                    type="name"
+                    name="name"
+                    placeholder="Иван Иванов"
+                  />
+                  <label class="lable_name" for="phone" class="label_name"
+                    >Номер телефона</label
+                  >
+                  <input
+                    class="input_row"
+                    type="tel"
+                    name="phone"
+                    placeholder="+7 -- -----"
+                  />
+                  <label class="lable_name" for="check_list"
+                    >Выберите услугу</label
+                  >
+                  <select class="input_row" name="check_list" id="#" required>
+                    <option value="check_list" disabled selected>
+                      - Выберите из списка -
+                    </option>
+                    <option value="STO">Замена масла</option>
+                    <option value="tools">Техническое обслуживание</option>
+                    <option value="repair">Ремонт подвески</option>
+                  </select>
+                  <label class="lable_name" for="date" class="label_name"
+                    >Желаемая дата</label
+                  >
+
+                  <input class="input_row" type="date" name="date" />
+
+                  <label class="lable_name" for="textarea"
+                    >Комментарий к заявке (марка авто, проблема)</label
+                  >
+                  <textarea
+                    class="input_row textarea_row"
+                    name="textarea"
+                    id="textarea"
+                    cols="30"
+                    rows="10"
+                  >
+Например: требуется замена подвески</textarea
+                  >
+                </form>
+                <div class="form_button">
+                  <a href="#" class="btn booking_form-button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_content">
+            <div class="footer_logo">
+              <a class="logotype footer_name"
+                >PRO <span class="logo">AUTO</span></a
+              >
+              <p class="footer_logo-text">
+                Комплексное обслуживание<br />
+                автомобилей на высшем уровне.
+              </p>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Навигация</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Главная</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="services..htmll#services" class="footer_nav-link"
+                    >Услуги СТО</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Магазин запчастей</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Для Клиентов</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Личный кабинет</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Онлайн запись</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Оптовым покупателям</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Контакты</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link"
+                    >ул. Моторная, 10, г. Москва</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">+7 (495) 123-45-67</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">info@proauto.ru</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
+        </div>
+      </footer>
     </main>
   </body>
 </html>
