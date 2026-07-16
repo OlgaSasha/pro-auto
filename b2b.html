@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PRO AUTO I Автосервис&Магазин</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,6 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="container header_container">
@@ -26,88 +26,77 @@
               >
             </li>
             <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
-            <li><a href="contacts.html#contacts" class="nav_link">Контакты</a></li>
+            <li>
+              <a href="contacts.html#contacts" class="nav_link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <a href="#" class="header_account">Личный кабинет</a>
       </div>
     </header>
-
     <main class="main">
-      <!--Hero-->
-      <section id="index" class="hero">
+      <section id="b2b_conditions" class="b2b_conditions">
         <div class="container">
-          <div class="hero_content">
-            <h1 class="hero_title">
-              Премиальный<br />
-              сервис
-              <span class="hero_subtitle">
-                для вашего<br />
-                авто</span
-              >
-            </h1>
-            <p class="hero_disc">
-              Полный спектр услуг по ремонту и тюнингу, а также собственный
-              магазин запчастей<br />
-              для розницы и оптовиков.
-            </p>
-            <div class="hero_services">
-              <a href="#" class="btn btn_services-online">Онлайн Запись</a>
-              <a href="#" class="btn btn_services-shop">Магазин</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--About-->
-      <section class="about">
-        <div class="container">
-          <div class="about_content">
-            <h2 class="about_title">
-              Почему <span class="about_subtitle">Мы?</span>
+          <div class="b2b_content">
+            <h2 class="services_title">
+              Магазин<span class="services_subtitle"> запчастей</span>
             </h2>
+            <p class="services_disc">
+              Оригинальные запчасти и качественные аналоги в наличии и под
+              заказ.
+            </p>
+            <div class="catalog">
+              <a href="shop.html#shop" class="catalog_retail"
+                >Розничный каталог</a
+              >
+              <a href="" class="catalog_b2b tab_active">Оптовым клиентам</a>
+            </div>
+            <div class="b2b_special">
+              <p class="b2b_special-disc">
+                Специальные условия для СТО и магазинов
+              </p>
+              <p class="b2b_special-text">
+                Мы предлагаем скидки до 40% от розничной цены, персонального
+                менеджера и бесплатную доставку при заказе от 50 000 ₽.
+              </p>
+            </div>
+            <p class="b2b_faq">Как стать оптовым клиентом?</p>
+
             <div class="about_block">
               <div class="about_card">
-                <img
-                  class="about_block-icon"
-                  src="images/hammer_tools.svg"
-                  alt="tools"
-                />
-                <p class="about_services">Современное СТО</p>
-                <p class="about_text">
-                  Новейшее диагностическое и ремонтное оборудование от мировых
-                  производителей.
+                <span class="b2b_faq-level">1</span>
+                <p class="about_services">Регистрация</p>
+
+                <p class="about_text services_text">
+                  Заполните форму регистрации оптового клиента в личном кабинете
+                  или свяжитесь с нашим менеджером.
                 </p>
               </div>
               <div class="about_card">
-                <img
-                  class="about_block-icon"
-                  src="images/cart.svg"
-                  alt="cart"
-                />
-                <p class="about_services">Свой Магазин</p>
-                <p class="about_text">
-                  В наличии более 50 000 позиций автозапчастей. Розничные и
-                  оптовые продажи.
+                <span class="b2b_faq-level">2</span>
+                <p class="about_services">Договор</p>
+
+                <p class="about_text services_text">
+                    Мы проверим ваши данные и заключим договор поставки с индивидуальными условиями скидок
                 </p>
               </div>
               <div class="about_card">
-                <img
-                  class="about_block-icon"
-                  src="images/account.svg"
-                  alt="private account"
-                />
-                <p class="about_services">Личный Кабинет</p>
-                <p class="about_text">
-                  Отслеживайте историю ремонта, заказы запчастей и записывайтесь
-                  онлайн в 2 клика.
+                <span class="b2b_faq-level">3</span>
+                <p class="about_services">Заказы</p>
+
+                <p class="about_text services_text">
+                    Получите доступ к оптовому порталу (через личный кабинет) с актуальными остатками и ценами.
                 </p>
               </div>
+             
             </div>
+            <div class="b2b_btn">
+                <a href="" class="btn b2b_button">Стать оптовым партнером</a>
+              </div>
+             
           </div>
         </div>
       </section>
-
       <footer class="footer">
         <div class="container">
           <div class="footer_content">
@@ -156,7 +145,7 @@
                 </li>
               </ul>
             </div>
-
+    
             <div class="footer_nav">
               <h3 class="footer_subtitle">Контакты</h3>
               <ul class="footer_nav-list list-reset">
@@ -182,6 +171,12 @@
           &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
         </div>
       </footer>
+
+
+
+
+
+
     </main>
   </body>
 </html>

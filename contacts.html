@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_container">
+        <a class="logotype">PRO <span class="logo">AUTO</span></a>
+        <nav class="header_nav">
+          <ul class="nav_list list-reset">
+            <li><a href="index.html#index" class="nav_link">Главная</a></li>
+            <li>
+              <a href="services.html#services" class="nav_link"
+                >Услуги&Запись</a
+              >
+            </li>
+            <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
+            <li>
+              <a href="contacts.html#contacts" class="nav_link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header_account">Личный кабинет</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--Contacts-->
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts_content">
+            <h2 class="services_title">
+              Свяжитесь с<span class="services_subtitle"> нами</span>
+            </h2>
+
+            <div class="contacts_form">
+              <div class="contacts_form-left">
+                <h3 class="contacts_form-subtitle">Наши контакты</h3>
+                <div class="contacts_block">
+                  <div class="contacts_icon">
+                    <img
+                      src="images/search-red.png"
+                      alt="search"
+                      class="contacts_img"
+                    />
+                  </div>
+                  <div class="contacts_info">
+                    <h4 class="info_name">Адрес</h4>
+                    <p class="info_text">
+                      ул. Моторная, 10, г. Москва<br />
+                      Метро "Автозаводская"
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts_block">
+                  <div class="contacts_icon">
+                    <img
+                      src="images/phone-red.png"
+                      alt="phone"
+                      class="contacts_img"
+                    />
+                  </div>
+                  <div class="contacts_info">
+                    <h4 class="info_name">Телефоны</h4>
+                    <p class="info_text">
+                      +7 (495) 123-45-67 (СТО)<br />
+                      +7 (495) 123-45-68 (Магазин)
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts_block">
+                  <div class="contacts_icon">
+                    <img
+                      src="images/letter-red.png"
+                      alt="letter"
+                      class="contacts_img"
+                    />
+                  </div>
+                  <div class="contacts_info">
+                    <h4 class="info_name">E-mail</h4>
+                    <p class="info_text">
+                      info@proauto.ru<br />
+                      opt@proauto.ru (Оптовый отдел)
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts_block">
+                  <div class="contacts_icon">
+                    <img
+                      src="images/watch-red.png"
+                      alt="watch"
+                      class="contacts_img"
+                    />
+                  </div>
+                  <div class="contacts_info">
+                    <h4 class="info_name">Режим работы</h4>
+                    <p class="info_text">
+                      Пн-Вс: 09:00 - 21:00<br />
+
+                      Без выходных
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts_map"><p class="contacts_sign">Карта проезда (iframe)</p></div>
+              </div>
+              
+            <div class="contacts_form-right">
+                <div class="contacts_form-box">
+                    <h3 class="contacts_form-subtitle">Остались вопросы?</h3>
+                    <p class="contacts_form-right-text">Напишите нам, и мы ответим в ближайшее время.</p>
+                    <form class="form_online" action="#">
+                        <label class="lable_name" for="name">Ваше имя</label>
+                        <input
+                          class="input_row"
+                          type="name"
+                          name="name"
+                          placeholder="Иван Иванов"
+                        />
+                        <label class="lable_name" for="email"
+                          >E-mail</label
+                        >
+                        <input
+                          class="input_row"
+                          type="email"
+                          name="email"
+                          placeholder="example@google.com"/>
+                          <label class="lable_name" for="check_list"
+                    >Тема обращения</label
+                  >
+                  <select class="input_row" name="check_list" id="#" required>
+                    <option value="check_list" disabled selected>
+                      - Выберите тему -
+                    </option>
+                    <option value="STO">Замена масла</option>
+                    <option value="tools">Техническое обслуживание</option>
+                    <option value="repair">Ремонт подвески</option>
+                  </select>
+
+
+                  <label class="lable_name" for="textarea"
+                    >Сообщение</label
+                  >
+                  <textarea
+                    class="input_row textarea_row"
+                    name="textarea"
+                    id="textarea"
+                    cols="30"
+                    rows="10"
+                  >
+Текст вашего сообщения</textarea>
+                    </form>
+                    <div class="form_button">
+                        <a href="#" class="btn booking_form-button">Отправить сообщение</a>
+                      </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_content">
+            <div class="footer_logo">
+              <a class="logotype footer_name"
+                >PRO <span class="logo">AUTO</span></a
+              >
+              <p class="footer_logo-text">
+                Комплексное обслуживание<br />
+                автомобилей на высшем уровне.
+              </p>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Навигация</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Главная</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="services..htmll#services" class="footer_nav-link"
+                    >Услуги СТО</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Магазин запчастей</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Для Клиентов</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Личный кабинет</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Онлайн запись</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">Оптовым покупателям</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Контакты</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link"
+                    >ул. Моторная, 10, г. Москва</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">+7 (495) 123-45-67</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link">info@proauto.ru</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
+        </div>
+      </footer>
+
+
+
+    </main>
+  </body>
+</html>

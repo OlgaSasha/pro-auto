@@ -125,7 +125,7 @@ body {
 }
 
 .header_account,
-.btn_services-shop {
+.btn_services-shop, .catalog_order {
   padding: 15px 25px;
   color: var(--text-main);
   font-size: 18px;
@@ -154,7 +154,7 @@ body {
 
 .hero_content,
 .services_content,
-.booking_content {
+.booking_content, .shop_content, .b2b_content, .contacts_content {
   display: flex;
   flex-direction: column;
   padding: 80px 15px;
@@ -199,7 +199,7 @@ body {
 }
 
 .btn_services-online,
-.booking_form-button {
+.booking_form-button, .b2b_button {
   background-color: var(--accent-red);
   transition: 0.3s ease;
 }
@@ -277,7 +277,7 @@ body {
   color: var(--text-main);
 }
 
-.about_text {
+.about_text, .catalog_disc {
   font-size: 16px;
   color: var(--text-muted);
   line-height: 1.6;
@@ -346,7 +346,7 @@ body {
 
 /*Services*/
 
-.services {
+.services, .b2b_conditions, .contacts {
   padding-top: 100px;
 }
 
@@ -366,7 +366,7 @@ body {
   height: 30px;
 }
 
-.services_price {
+.services_price, .catalog_price {
   font-size: 30px;
   color: var(--accent-red);
   font-weight: 800;
@@ -385,6 +385,11 @@ body {
 
 /*Booking*/
 
+
+
+.booking{
+  border-bottom: 1px solid var(--border-color);
+}
 .booking_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -442,6 +447,11 @@ body {
   margin-bottom: 20px;
 }
 
+.input_row:focus{
+  border-color: var(--accent-hover);
+  background-color: var(--bg-panel-hover);
+}
+
 .lable_name {
   color: var(--text-main);
   font-size: 16px;
@@ -466,4 +476,280 @@ body {
 .booking_form-button:hover {
   background-color: var(--accent-hover);
   box-shadow: 0px 0px 24px 4px rgba(230, 57, 70, 0.45);
+}
+
+
+/*SHOP*/
+
+.shop {
+  padding-top: 100px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.catalog {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: var(--text-main);
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+.catalog_retail, .catalog_b2b{
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  color: var(--text-muted);
+}
+
+.tab_active {
+  border-bottom: 3px solid var(--accent-red);
+  color: var(--text-main);
+}
+
+
+
+.catalog_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  color: var(--text-main);
+}
+
+.catalog_item{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  min-height: 420px;
+  gap: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  background-color: var(--bg-panel);
+  transition: 0.3s ease;
+}
+
+.catalog_item:hover{
+  transform: translateY(-5px);
+  border: 1px solid var(--accent-hover);
+}
+
+.catalog_image {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background-color: rgb(37, 37, 37);
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+
+}
+
+.image_icon {
+ padding-top: 90px;
+ color: var(--text-muted);
+}
+
+.catalog_product {
+ min-height: 48px;
+ margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: left;
+  line-height: 1.6;
+}
+
+ .catalog_disc {
+  height: 80px;
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: left;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.catalog_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+gap: 10px;
+flex-wrap: nowrap;
+margin-top: auto;
+
+}
+
+.catalog_price {
+  flex-shrink: 0;
+}
+
+.catalog_order {
+ flex-shrink: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--accent-red);
+  transition: 0.3s ease;
+}
+
+.catalog_order:hover{
+  background-color: var(--accent-hover);
+  box-shadow: 0px 0px 24px 4px rgba(230, 57, 70, 0.45);
+}
+
+
+/*B2B*/
+
+.b2b_conditions {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.b2b_special{
+  border: 1px solid var(--accent-red);
+  padding: 35px 20px;
+  border-radius: var(--radius-lg);
+  text-align: left;
+  background: #80222c;
+background: linear-gradient(90deg, rgba(128, 34, 44, 0.43) 0%, rgba(33, 32, 32, 0.2) 62%);
+}
+
+.b2b_special-disc {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 30px;
+}
+
+.b2b_special-text {
+  color: var(--text-muted);
+}
+
+.b2b_faq {
+  color: var(--text-main);
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.b2b_faq-level{
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--accent-red);
+  border: 3px solid var(--accent-red);
+  padding: 8px 15px;
+}
+
+.b2b_btn{
+  display: flex;
+  justify-content: center;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.b2b_button:hover{
+  background-color: var(--accent-hover);
+  box-shadow: 0px 0px 24px 4px rgba(230, 57, 70, 0.45);
+}
+
+
+/*contacts*/
+.contacts{
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contacts_block {
+  display: flex;
+  gap:20px;
+  margin-bottom: 30px;
+
+ 
+}
+
+
+
+.contacts_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 55px 45px;
+  background-color:var(--bg-panel)
+  ;
+
+}
+
+.contacts_img{
+  width: 20px;
+  height: 20px;
+}
+
+.contacts_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+ 
+}
+
+.contacts_form-subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--text-main);
+  text-align: left;
+  margin-bottom: 40px;
+}
+.info_name {
+  color: var(--text-main);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info_text {
+  color: var(--text-muted);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.contacts_map {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  height: 350px;
+  color: var(--text-muted);
+  background-color: rgb(37, 37, 37)
+}
+
+
+.contacts_sign {
+ margin-top: 150px;
+ 
+}
+
+.contacts_form-box {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 35px;
+  background-color: var(--bg-panel-hover);
+  
+}
+.contacts_form-right{
+  transition: transform 0.3s ease;
+}
+
+.contacts_form-right:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.contacts_form-right-text {
+  color: var(--text-muted);
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
 }
