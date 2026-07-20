@@ -13,11 +13,12 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="shop_page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">
           <span class="menu-rows"></span>
           <span class="menu-rows"></span>
@@ -32,7 +33,12 @@
               >
             </li>
             <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
-            <li><a href="contacts.html#contacts" class="nav_link">Контакты</a></li>
+            <li>
+              <a href="contacts.html#contacts" class="nav_link">Контакты</a>
+            </li>
+            <li class="mobile-only-account">
+              <a href="account.html#account" class="nav_link">Личный кабинет</a>
+            </li>
           </ul>
         </nav>
         <a href="account.html#account" class="header_account">Личный кабинет</a>
@@ -53,11 +59,15 @@
             </p>
             <div class="catalog">
               <a href="" class="catalog_retail tab_active">Розничный каталог</a>
-              <a href="b2b.html#b2b_conditions" class="catalog_b2b">Оптовым клиентам</a>
+              <a href="b2b.html#b2b_conditions" class="catalog_b2b"
+                >Оптовым клиентам</a
+              >
             </div>
             <div class="catalog_items">
               <div class="catalog_item">
-                <div class="catalog_image"><p class="image_icon">Фото масла</p></div>
+                <div class="catalog_image">
+                  <p class="image_icon">Фото масла</p>
+                </div>
                 <h3 class="catalog_product">Моторное масло 5W-30 (5л)</h3>
                 <p class="catalog_disc">
                   Синтетическое моторное масло высшего качества для современных
@@ -69,10 +79,13 @@
                 </div>
               </div>
               <div class="catalog_item">
-                <div class="catalog_image"><p class="image_icon">Фото колодок</p></div>
+                <div class="catalog_image">
+                  <p class="image_icon">Фото колодок</p>
+                </div>
                 <h3 class="catalog_product">Тормозные колодки (передние)</h3>
                 <p class="catalog_disc">
-                    Оригинальные тормозные колодки с датчиком износа. Керамический состав.
+                  Оригинальные тормозные колодки с датчиком износа. Керамический
+                  состав.
                 </p>
                 <div class="catalog_info">
                   <span class="catalog_price">2 800 ₽</span>
@@ -80,10 +93,12 @@
                 </div>
               </div>
               <div class="catalog_item">
-                <div class="catalog_image"><p class="image_icon">Фото фильтра</p></div>
+                <div class="catalog_image">
+                  <p class="image_icon">Фото фильтра</p>
+                </div>
                 <h3 class="catalog_product">Масляный фильтр</h3>
                 <p class="catalog_disc">
-                    Фильтр очистки масла увеличенной емкости с обратным клапаном.
+                  Фильтр очистки масла увеличенной емкости с обратным клапаном.
                 </p>
                 <div class="catalog_info">
                   <span class="catalog_price">650 ₽</span>
@@ -91,10 +106,13 @@
                 </div>
               </div>
               <div class="catalog_item">
-                <div class="catalog_image"><p class="image_icon">Фото аккумулятора</p></div>
+                <div class="catalog_image">
+                  <p class="image_icon">Фото аккумулятора</p>
+                </div>
                 <h3 class="catalog_product">Аккумулятор 60Ah 12V</h3>
                 <p class="catalog_disc">
-                    Надежный аккумулятор с повышенным пусковым током для суровых зим.
+                  Надежный аккумулятор с повышенным пусковым током для суровых
+                  зим.
                 </p>
                 <div class="catalog_info">
                   <span class="catalog_price">7 200 ₽</span>
@@ -105,86 +123,95 @@
           </div>
         </div>
       </section>
-<!--Footer-->
-<footer class="footer">
-  <div class="container">
-    <div class="footer_content">
-      <div class="footer_logo">
-        <a class="logotype footer_name"
-          >PRO <span class="logo">AUTO</span></a
-        >
-        <p class="footer_logo-text">
-          Комплексное обслуживание<br />
-          автомобилей на высшем уровне.
-        </p>
-      </div>
-      <div class="footer_nav">
-        <h3 class="footer_subtitle">Навигация</h3>
-        <ul class="footer_nav-list list-reset">
-          <li class="footer_nav-item">
-            <a href="index.html#index" class="footer_nav-link">Главная</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="services.html#services" class="footer_nav-link"
-              >Услуги СТО</a
-            >
-          </li>
-          <li class="footer_nav-item">
-            <a href="shop.html#shop" class="footer_nav-link">Магазин запчастей</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="contacts.html#contacts" class="footer_nav-link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer_nav">
-        <h3 class="footer_subtitle">Для Клиентов</h3>
-        <ul class="footer_nav-list list-reset">
-          <li class="footer_nav-item">
-            <a href="account.html#account" class="footer_nav-link">Личный кабинет</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="services.html#services" class="footer_nav-link">Онлайн запись</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="shop.html#shop" class="footer_nav-link">Оптовым покупателям</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" class="footer_nav-link invisible_link">--</a>
-          </li>
-        </ul>
-      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_content">
+            <div class="footer_logo">
+              <a class="logotype footer_name"
+                >PRO <span class="logo">AUTO</span></a
+              >
+              <p class="footer_logo-text">
+                Комплексное обслуживание<br />
+                автомобилей на высшем уровне.
+              </p>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Навигация</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="index.html#index" class="footer_nav-link">Главная</a>
+                </li>
+                <li class="footer_nav-item">
+                  <a href="services.html#services" class="footer_nav-link"
+                    >Услуги СТО</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="shop.html#shop" class="footer_nav-link"
+                    >Магазин запчастей</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="contacts.html#contacts" class="footer_nav-link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Для Клиентов</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="account.html#account" class="footer_nav-link"
+                    >Личный кабинет</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="services.html#services" class="footer_nav-link"
+                    >Онлайн запись</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="shop.html#shop" class="footer_nav-link"
+                    >Оптовым покупателям</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
 
-      <div class="footer_nav">
-        <h3 class="footer_subtitle">Контакты</h3>
-        <ul class="footer_nav-list list-reset">
-          <li class="footer_nav-item">
-            <a href="#" class="footer_nav-link address_link"
-              >ул. Моторная, 10, г. Москва</a
-            >
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" class="footer_nav-link phone_link">+7 (495) 123-45-67</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" class="footer_nav-link email_link">info@proauto.ru</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" class="footer_nav-link invisible_link">--</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer_copy">
-    &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
-  </div>
-</footer>
-
-
-
-
-
+            <div class="footer_nav">
+              <h3 class="footer_subtitle">Контакты</h3>
+              <ul class="footer_nav-list list-reset">
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link address_link"
+                    >ул. Моторная, 10, г. Москва</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link phone_link"
+                    >+7 (495) 123-45-67</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link email_link"
+                    >info@proauto.ru</a
+                  >
+                </li>
+                <li class="footer_nav-item">
+                  <a href="#" class="footer_nav-link invisible_link">--</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -230,6 +230,7 @@ body {
   background-color: var(--bg-panel-hover);
   border: 1px solid var(--text-main);
 }
+
 .mobile-only-account {
   display: none;
 }
@@ -990,6 +991,7 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+
 .service_plan {
   font-size: 25px;
   font-weight: 600;
@@ -1002,6 +1004,7 @@ body {
 .service_date {
   font-weight: 600;
 }
+
 .service_history-button {
   font-size: 14px;
   font-weight: 800;
@@ -1173,6 +1176,7 @@ th {
   align-items: center;
   margin-bottom: 40px;
 }
+
 .garage_block-top-title {
   font-size: 22px;
   color: var(--text-main);
@@ -1190,9 +1194,7 @@ th {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   padding: 25px;
-
   border: 1px solid var(--border-color);
   border-top: 3px solid var(--accent-red);
   border-radius: var(--radius-lg);
@@ -1279,7 +1281,6 @@ th {
 
 .garage_form:hover {
   transform: translateY(-5px);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -1305,31 +1306,25 @@ th {
     padding-left: 25px;
     padding-right: 25px;
   }
-
   .logotype {
     font-size: 20px;
   }
-
   .nav_link {
     font-size: 14px;
   }
-
   .header_account {
     font-size: 14px;
     padding: 8px 15px;
   }
-
   .nav_list {
     gap: 20px;
   }
   .footer_subtitle {
     font-size: 16px;
   }
-
   .footer_nav-link {
     font-size: 14px;
   }
-
   .footer_logo-text,
   .footer_copy {
     font-size: 14px;
@@ -1346,7 +1341,6 @@ th {
     cursor: pointer;
     z-index: 101;
   }
-
   .menu-rows {
     display: block;
     height: 3px;
@@ -1355,17 +1349,14 @@ th {
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
-
   .about_block-icon,
   .services_icon {
     width: 40px;
     height: 40px;
   }
-
   .about_services {
     font-size: 20px;
   }
-
   .services_title-tablet {
     font-size: 18px;
   }
@@ -1374,17 +1365,14 @@ th {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-
   .catalog_items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-
   .contacts_map {
     height: 220px;
   }
-
   .main_block {
     display: flex;
     flex-direction: column;
@@ -1395,19 +1383,16 @@ th {
   .account_list {
     width: 100%;
   }
-
   .garage_block-cards {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
   }
-
   .order_history {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .order_price {
     font-size: 18px;
   }
@@ -1434,7 +1419,6 @@ th {
   .menu-toggle:checked ~ .header_nav {
     display: flex;
   }
-
   .menu-toggle:checked + .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translateY(6px) translateX(6px);
   }
@@ -1451,23 +1435,24 @@ th {
     display: none;
     position: fixed;
     top: 60px;
-    left: 0;
-    right: 0;
-    width: 100%;
-
-    height: calc(100vh-60px);
+    left: auto;
+    right: 25px;
+    width: 85%;
+    height: auto;
+    padding: 20px 0;
     background-color: #161616;
+    padding: 40px 20px 30px 20px;
+    border-radius: 12px;
+    top: 70px;
     z-index: 99990;
     margin: 0;
     overflow-y: auto;
     transform: none;
   }
-
   #menu-toggle:checked ~ .header_nav,
   #menu-toggle:checked ~ * .header_nav {
     display: block;
   }
-
   .menu_icon {
     display: flex;
     width: 30px;
@@ -1477,18 +1462,17 @@ th {
     cursor: pointer;
     z-index: 99999;
   }
-
   .nav_list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 40px 0;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
     width: 100%;
   }
-
   .nav_list li {
-    margin: 20px 0;
+    margin: 8px 0;
     width: 100%;
     text-align: center;
   }
@@ -1499,32 +1483,55 @@ th {
   .menu-toggle:checked ~ .header_nav {
     display: block;
   }
-
   .hero_title {
     font-size: 30px;
   }
-
   .hero_disc {
     font-size: 16px;
   }
-
   .logotype {
     font-size: 18px;
   }
-
   .header_account {
     display: none;
   }
   .mobile-only-account {
     display: block;
   }
-
   .mobile-only-account a {
     color: var(--text-main);
     font-size: 22px;
     font-weight: 600;
   }
-
-
-
+  .about_title {
+    font-size: 30px;
+  }
+  .about_block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer_copy {
+    font-size: 12px;
+  }
+  .booking_form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .catalog_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .contacts_form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 }
