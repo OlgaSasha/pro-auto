@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Магазин и ОПТ I PRO AUTO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,10 +13,16 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="b2b_page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+        </label>
         <nav class="header_nav">
           <ul class="nav_list list-reset">
             <li><a href="index.html#index" class="nav_link">Главная</a></li>
@@ -26,12 +32,10 @@
               >
             </li>
             <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
-            <li>
-              <a href="contacts.html#contacts" class="nav_link">Контакты</a>
-            </li>
+            <li><a href="contacts.html#contacts" class="nav_link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="header_account">Личный кабинет</a>
+        <a href="account.html#account" class="header_account">Личный кабинет</a>
       </div>
     </header>
     <main class="main">
@@ -97,6 +101,7 @@
           </div>
         </div>
       </section>
+      <!--Footer-->
       <footer class="footer">
         <div class="container">
           <div class="footer_content">
@@ -113,18 +118,18 @@
               <h3 class="footer_subtitle">Навигация</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Главная</a>
+                  <a href="index.html#index" class="footer_nav-link">Главная</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="services..htmll#services" class="footer_nav-link"
+                  <a href="services.html#services" class="footer_nav-link"
                     >Услуги СТО</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Магазин запчастей</a>
+                  <a href="shop.html#shop" class="footer_nav-link">Магазин запчастей</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Контакты</a>
+                  <a href="contacts.html#contacts" class="footer_nav-link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -132,33 +137,33 @@
               <h3 class="footer_subtitle">Для Клиентов</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Личный кабинет</a>
+                  <a href="account.html#account" class="footer_nav-link">Личный кабинет</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Онлайн запись</a>
+                  <a href="services.html#services" class="footer_nav-link">Онлайн запись</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Оптовым покупателям</a>
+                  <a href="shop.html#shop" class="footer_nav-link">Оптовым покупателям</a>
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>
                 </li>
               </ul>
             </div>
-    
+
             <div class="footer_nav">
               <h3 class="footer_subtitle">Контакты</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link"
+                  <a href="#" class="footer_nav-link address_link"
                     >ул. Моторная, 10, г. Москва</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">+7 (495) 123-45-67</a>
+                  <a href="#" class="footer_nav-link phone_link">+7 (495) 123-45-67</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">info@proauto.ru</a>
+                  <a href="#" class="footer_nav-link email_link">info@proauto.ru</a>
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>
@@ -171,8 +176,6 @@
           &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
         </div>
       </footer>
-
-
 
 
 

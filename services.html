@@ -14,19 +14,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="services_page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+        </label>
         <nav class="header_nav">
           <ul class="nav_list list-reset">
             <li><a href="index.html#index" class="nav_link">Главная</a></li>
-            <li><a href="services.html#services" class="nav_link">Услуги&Запись</a></li>
+            <li>
+              <a href="services.html#services" class="nav_link"
+                >Услуги&Запись</a
+              >
+            </li>
             <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
             <li><a href="contacts.html#contacts" class="nav_link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="header_account">Личный кабинет</a>
+        <a href="account.html#account" class="header_account">Личный кабинет</a>
       </div>
     </header>
 
@@ -54,7 +64,7 @@
                     alt="key"
                     class="services_img"
                   />
-                  <p class="about_services">Диагностика</p>
+                  <p class="about_services services_title-tablet">Диагностика</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -67,7 +77,7 @@
               <div class="about_card">
                 <div class="services_icon">
                   <img src="images/oil-white.png" alt="" class="services_img" />
-                  <p class="about_services">Замена масла и ТО</p>
+                  <p class="about_services services_title-tablet">Замена масла и ТО</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -83,7 +93,7 @@
                     alt=""
                     class="services_img"
                   />
-                  <p class="about_services">Ходовая часть</p>
+                  <p class="about_services services_title-tablet">Ходовая часть</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -95,7 +105,7 @@
               <div class="about_card">
                 <div class="services_icon">
                   <img src="images/oil-white.png" alt="" class="services_img" />
-                  <p class="about_services">Автоэлектрика</p>
+                  <p class="about_services services_title-tablet">Автоэлектрика</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -111,7 +121,7 @@
                     alt=""
                     class="services_img"
                   />
-                  <p class="about_services">Кондиционеры</p>
+                  <p class="about_services services_title-tablet">Кондиционеры</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -122,7 +132,7 @@
               <div class="about_card">
                 <div class="services_icon">
                   <img src="images/car-white.png" alt="" class="services_img" />
-                  <p class="about_services">Шиномонтаж</p>
+                  <p class="about_services services_title-tablet">Шиномонтаж</p>
                 </div>
 
                 <p class="about_text services_text">
@@ -153,9 +163,9 @@
                 <ul class="booking_form-list list-reset">
                   <li class="booking_form-item">Скидка 5% при записи онлайн</li>
                   <li class="booking_form-item">Гарантия на все виды работ</li>
-                  <li class="booking_form-item">
-                    Комфортная зона ожидания с Wi-Fi
-                  </li>
+                  <li class="booking_form-item">Комфортная зона ожидания с Wi-Fi</li> 
+                
+                 
                 </ul>
               </div>
               <div class="booking_form-right">
@@ -232,18 +242,18 @@
               <h3 class="footer_subtitle">Навигация</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Главная</a>
+                  <a href="index.html#index" class="footer_nav-link">Главная</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="services..htmll#services" class="footer_nav-link"
+                  <a href="services.html#services" class="footer_nav-link"
                     >Услуги СТО</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Магазин запчастей</a>
+                  <a href="shop.html#shop" class="footer_nav-link">Магазин запчастей</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Контакты</a>
+                  <a href="contacts.html#contacts" class="footer_nav-link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -251,13 +261,13 @@
               <h3 class="footer_subtitle">Для Клиентов</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Личный кабинет</a>
+                  <a href="account.html#account" class="footer_nav-link">Личный кабинет</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Онлайн запись</a>
+                  <a href="services.html#services" class="footer_nav-link">Онлайн запись</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Оптовым покупателям</a>
+                  <a href="shop.html#shop" class="footer_nav-link">Оптовым покупателям</a>
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>
@@ -269,15 +279,15 @@
               <h3 class="footer_subtitle">Контакты</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link"
+                  <a href="#" class="footer_nav-link address_link"
                     >ул. Моторная, 10, г. Москва</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">+7 (495) 123-45-67</a>
+                  <a href="#" class="footer_nav-link phone_link">+7 (495) 123-45-67</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">info@proauto.ru</a>
+                  <a href="#" class="footer_nav-link email_link">info@proauto.ru</a>
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>

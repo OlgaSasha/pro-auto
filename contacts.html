@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Контакты I PRO AUTO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,10 +13,16 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="contacts_page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+        </label>
         <nav class="header_nav">
           <ul class="nav_list list-reset">
             <li><a href="index.html#index" class="nav_link">Главная</a></li>
@@ -31,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header_account">Личный кабинет</a>
+        <a href="account.html#account" class="header_account">Личный кабинет</a>
       </div>
     </header>
 
@@ -112,63 +118,67 @@
                     </p>
                   </div>
                 </div>
-                <div class="contacts_map"><p class="contacts_sign">Карта проезда (iframe)</p></div>
-              </div>
-              
-            <div class="contacts_form-right">
-                <div class="contacts_form-box">
-                    <h3 class="contacts_form-subtitle">Остались вопросы?</h3>
-                    <p class="contacts_form-right-text">Напишите нам, и мы ответим в ближайшее время.</p>
-                    <form class="form_online" action="#">
-                        <label class="lable_name" for="name">Ваше имя</label>
-                        <input
-                          class="input_row"
-                          type="name"
-                          name="name"
-                          placeholder="Иван Иванов"
-                        />
-                        <label class="lable_name" for="email"
-                          >E-mail</label
-                        >
-                        <input
-                          class="input_row"
-                          type="email"
-                          name="email"
-                          placeholder="example@google.com"/>
-                          <label class="lable_name" for="check_list"
-                    >Тема обращения</label
-                  >
-                  <select class="input_row" name="check_list" id="#" required>
-                    <option value="check_list" disabled selected>
-                      - Выберите тему -
-                    </option>
-                    <option value="STO">Замена масла</option>
-                    <option value="tools">Техническое обслуживание</option>
-                    <option value="repair">Ремонт подвески</option>
-                  </select>
-
-
-                  <label class="lable_name" for="textarea"
-                    >Сообщение</label
-                  >
-                  <textarea
-                    class="input_row textarea_row"
-                    name="textarea"
-                    id="textarea"
-                    cols="30"
-                    rows="10"
-                  >
-Текст вашего сообщения</textarea>
-                    </form>
-                    <div class="form_button">
-                        <a href="#" class="btn booking_form-button">Отправить сообщение</a>
-                      </div>
+                <div class="contacts_map">
+                  <p class="contacts_sign">Карта проезда (iframe)</p>
                 </div>
-            </div>
+              </div>
+
+              <div class="contacts_form-right">
+                <div class="contacts_form-box">
+                  <h3 class="contacts_form-subtitle">Остались вопросы?</h3>
+                  <p class="contacts_form-right-text">
+                    Напишите нам, и мы ответим в ближайшее время.
+                  </p>
+                  <form class="form_online" action="#">
+                    <label class="lable_name" for="name">Ваше имя</label>
+                    <input
+                      class="input_row"
+                      type="name"
+                      name="name"
+                      placeholder="Иван Иванов"
+                    />
+                    <label class="lable_name" for="email">E-mail</label>
+                    <input
+                      class="input_row"
+                      type="email"
+                      name="email"
+                      placeholder="example@google.com"
+                    />
+                    <label class="lable_name" for="check_list"
+                      >Тема обращения</label
+                    >
+                    <select class="input_row" name="check_list" id="#" required>
+                      <option value="check_list" disabled selected>
+                        - Выберите тему -
+                      </option>
+                      <option value="STO">Замена масла</option>
+                      <option value="tools">Техническое обслуживание</option>
+                      <option value="repair">Ремонт подвески</option>
+                    </select>
+
+                    <label class="lable_name" for="textarea">Сообщение</label>
+                    <textarea
+                      class="input_row textarea_row"
+                      name="textarea"
+                      id="textarea"
+                      cols="30"
+                      rows="10"
+                    >Текст вашего сообщения
+                    </textarea
+                    >
+                  </form>
+                  <div class="form_button">
+                    <a href="#" class="btn booking_form-button"
+                      >Отправить сообщение</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!--Footer-->
       <footer class="footer">
         <div class="container">
           <div class="footer_content">
@@ -185,18 +195,22 @@
               <h3 class="footer_subtitle">Навигация</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Главная</a>
+                  <a href="index.html#index" class="footer_nav-link">Главная</a>
                 </li>
                 <li class="footer_nav-item">
-                  <a href="services..htmll#services" class="footer_nav-link"
+                  <a href="services.html#services" class="footer_nav-link"
                     >Услуги СТО</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Магазин запчастей</a>
+                  <a href="shop.html#shop" class="footer_nav-link"
+                    >Магазин запчастей</a
+                  >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Контакты</a>
+                  <a href="contacts.html#contacts" class="footer_nav-link"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </div>
@@ -204,13 +218,19 @@
               <h3 class="footer_subtitle">Для Клиентов</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Личный кабинет</a>
+                  <a href="account.html#account" class="footer_nav-link"
+                    >Личный кабинет</a
+                  >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Онлайн запись</a>
+                  <a href="services.html#services" class="footer_nav-link"
+                    >Онлайн запись</a
+                  >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">Оптовым покупателям</a>
+                  <a href="shop.html#shop" class="footer_nav-link"
+                    >Оптовым покупателям</a
+                  >
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>
@@ -222,15 +242,19 @@
               <h3 class="footer_subtitle">Контакты</h3>
               <ul class="footer_nav-list list-reset">
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link"
+                  <a href="#" class="footer_nav-link address_link"
                     >ул. Моторная, 10, г. Москва</a
                   >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">+7 (495) 123-45-67</a>
+                  <a href="#" class="footer_nav-link phone_link"
+                    >+7 (495) 123-45-67</a
+                  >
                 </li>
                 <li class="footer_nav-item">
-                  <a href="#" class="footer_nav-link">info@proauto.ru</a>
+                  <a href="#" class="footer_nav-link email_link"
+                    >info@proauto.ru</a
+                  >
                 </li>
                 <li class="footer_nav-item">
                   <a href="#" class="footer_nav-link invisible_link">--</a>
@@ -243,9 +267,6 @@
           &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
         </div>
       </footer>
-
-
-
     </main>
   </body>
 </html>

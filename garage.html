@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Настройки профиля I PRO AUTO</title>
+    <title>Мои автомобили I PRO AUTO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body class="account_page">
+  <body class="garage_page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
@@ -37,10 +37,11 @@
             </li>
           </ul>
         </nav>
-        <a href="account.html#account" class="header_account account_pink">Личный кабинет</a>
+        <a href="account.html#account" class="header_account account_pink"
+          >Личный кабинет</a
+        >
       </div>
     </header>
-
     <main class="main">
       <section id="account" class="account">
         <div class="container">
@@ -56,122 +57,145 @@
 
                 <ul class="account_list list-reset">
                   <li class="account_item">
-                    <a href="service-history.html#service_history" class="account_link">История обслуживания</a>
+                    <a
+                      href="service-history.html#service_history"
+                      class="account_link"
+                      >История обслуживания</a
+                    >
                   </li>
                   <li class="account_item">
-                    <a href="order_block.html#order_block" class="account_link">Заказы запчастей</a>
+                    <a href="order_block.html#order_block" class="account_link"
+                      >Заказы запчастей</a
+                    >
                   </li>
                   <li class="account_item">
-                    <a href="garage.html#garage_block" class="account_link">Мои автомобили</a>
+                    <a href="garage.html#garage_block" class="account_link"
+                      >Мои автомобили</a
+                    >
                   </li>
                   <li class="account_item">
-                    <a href="account.html#account" class="account_link">Настройки профиля </a>
+                    <a href="account.html#account" class="account_link"
+                      >Настройки профиля
+                    </a>
                   </li>
                   <li class="account_item">
-                    <a href="index.html#index" class="account_link account_exit">Выйти </a>
+                    <a href="index.html#index" class="account_link account_exit"
+                      >Выйти
+                    </a>
                   </li>
                 </ul>
               </aside>
-              <div class="main_box">
-                <h2 class="main_box-title">Настройки профиля</h2>
-                <div class="personal_info">
-                  <h3 class="personal_info-title">Личные данные</h3>
-                  <form action="#">
+              <div id="garage_block" class="garage_block">
+                <div class="garage_block-top">
+                  <h3 class="garage_block-top-title">Гараж</h3>
+                  <a href="#" class="btn order_top-btn">Добавить авто</a>
+                </div>
+                <div class="garage_block-cards">
+                  <div class="garage_block-item">
+                    <img
+                      src="images/car-white.png"
+                      alt=""
+                      class="garage_block-icon"
+                    />
+                    <h3 class="garage_block-item-subtitle">
+                      Toyota Camry (XV70)
+                    </h3>
+                    <p class="garage_block-text">Гос. номер: А123АА77</p>
+                    <p class="garage_block-text">VIN: JT123456789012345</p>
+                    <div class="garage_block-button">
+                      <a href="#" class="btn garage_block-button-transparent"
+                        >Редактировать</a
+                      >
+                      <a href="#" class="btn garage_block-button-red"
+                        >Удалить</a
+                      >
+                    </div>
+                  </div>
+                  <div class="garage_block-item">
+                    <img
+                      src="images/car-white.png"
+                      alt=""
+                      class="garage_block-icon"
+                    />
+                    <h3 class="garage_block-item-subtitle">Kia Rio (IV)</h3>
+                    <p class="garage_block-text">Гос. номер: В456ВВ199</p>
+                    <p class="garage_block-text">VIN: XWE12345678901234</p>
+                    <div class="garage_block-button">
+                      <a href="#" class="btn garage_block-button-transparent"
+                        >Редактировать</a
+                      >
+                      <a href="#" class="btn garage_block-button-red"
+                        >Удалить</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="garage_form">
+                  <h3 class="garage_form-title">Добавить новый автомобиль</h3>
+                  <form action="#" class="garage_form-table">
                     <div class="form_rows">
                       <div class="form_group">
-                        <label class="lable_name personal_name" for="name"
-                          >ФИО</label
-                        >
-                        <input
-                          class="input_row"
-                          type="name"
-                          name="name"
-                          placeholder="Иванов Иван Иванович"
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="phone"
-                          >Телефон</label
-                        >
-                        <input
-                          class="input_row"
-                          type="tel"
-                          name="phone"
-                          placeholder="+7(999) 567 78 99"
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="email"
-                          >E-mail</label
-                        >
-                        <input
-                          class="input_row"
-                          type="email"
-                          name="email"
-                          placeholder="example@google.com"
-                        />
-                      </div>
-                      <div class="form_group">
                         <label class="lable_name personal_name" for="text"
-                          >Город</label
+                          >Марка *</label
                         >
                         <input
                           class="input_row"
                           type="text"
                           name="text"
-                          placeholder="Москва"
+                          placeholder="Например: Tayota"
                         />
                       </div>
-                      <div class="form_group-button">
-                        <a href="#" class="btn form_group-button--link"
-                          >Сохранить изменения</a
+                      <div class="form_group">
+                        <label class="lable_name personal_name" for="text"
+                          >Модель *</label
                         >
+                        <input
+                          class="input_row"
+                          type="text"
+                          name="text"
+                          placeholder="Например: Camry"
+                        />
+                      </div>
+                      <div class="form_group">
+                        <label class="lable_name personal_name" for="year"
+                          >Год выпуска</label
+                        >
+                        <input
+                          class="input_row"
+                          type="number"
+                          id="year"
+                          placeholder="2020"
+                        />
+                      </div>
+                      <div class="form_group">
+                        <label class="lable_name personal_name" for="text"
+                          >Гос. номер</label
+                        >
+                        <input
+                          class="input_row"
+                          type="text"
+                          name="text"
+                          placeholder="A123AA77"
+                        />
                       </div>
                     </div>
-                  </form>
-                </div>
-                <div class="personal_info">
-                  <h3 class="personal_info-title">Изменение пароля</h3>
-                  <form action="#">
-                    <div class="form_rows">
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password"
-                          >Текущий пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="empty_grid_row"></div>
 
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password"
-                          >Новый пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password">
-                          Подтвердите пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="rassword_button">
-                        <a href="" class="btn password_btn">Обновить пароль</a>
-                      </div>
+                    <div class="form_group large_row">
+                      <label class="lable_name personal_name" for="text"
+                        >VIN номер (желательно)</label
+                      >
+                      <input
+                        class="input_row"
+                        type="text"
+                        name="text"
+                        placeholder="17 символов"
+                      />
+                    </div>
+                    <div class="form_group-button">
+                      <a href="#" class="btn form_group-button--link"
+                        >Сохранить авто</a
+                      >
                     </div>
                   </form>
                 </div>
@@ -181,7 +205,6 @@
         </div>
       </section>
 
-      <!--Footer-->
       <footer class="footer">
         <div class="container">
           <div class="footer_content">

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет I PRO AUTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="service-history-page">
+    <header class="header">
+      <div class="container header_container">
+        <a class="logotype">PRO <span class="logo">AUTO</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+          <span class="menu-rows"></span>
+        </label>
+        <nav class="header_nav">
+          <ul class="nav_list list-reset">
+            <li><a href="index.html#index" class="nav_link">Главная</a></li>
+            <li>
+              <a href="services.html#services" class="nav_link"
+                >Услуги&Запись</a
+              >
+            </li>
+            <li><a href="shop.html#shop" class="nav_link">Магазин&ОПТ</a></li>
+            <li>
+              <a href="contacts.html#contacts" class="nav_link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="account.html#account" class="header_account account_pink">Личный кабинет</a>
+      </div>
+    </header>
+<!---->
+    <main class="main">
+        <section id="account" class="account">
+            <div class="container">
+              <div class="account_content content_left">
+                <h2 class="services_title account_title">
+                  Личный<span class="services_subtitle"> кабинет</span>
+                </h2>
+                <div class="main_block">
+                  <aside class="sidebar">
+                    <div class="account_avatar">И</div>
+                    <p class="avatar_name">Иван Иванов</p>
+                    <p class="avatar_skills">Оптовый клиент (Скидка 15%)</p>
+    
+                    <ul class="account_list list-reset">
+                      <li class="account_item">
+                        <a href="service-history.html#service_history" class="account_link">История обслуживания</a>
+                      </li>
+                      <li class="account_item">
+                        <a href="order_block.html#order_block" class="account_link">Заказы запчастей</a>
+                      </li>
+                      <li class="account_item">
+                        <a href="garage.html#garage_block" class="account_link">Мои автомобили</a>
+                      </li>
+                      <li class="account_item">
+                        <a href="account.html#account" class="account_link">Настройки профиля </a>
+                      </li>
+                      <li class="account_item">
+                        <a href="index.html#index" class="account_link account_exit">Выйти </a>
+                      </li>
+                    </ul>
+                  </aside>
+                  <!--Service-History-->
+                  <div id="service_history" class="service_history">
+                    <h3 class="personal_info-title">Текущие записи на СТО</h3>
+                    <div class="service_sto">
+                        <div class="order_history">
+                            <p class="service_plan">Плановое ТО (Toyota Camry)</p>
+                            <p class="service_job">Замена масла, масляного и салонного фильтра.</p>
+                            <span class="service_date">15 Июля 2026, 14:00</span>
+                            <a href="#" class="service_history-button">Отменить запись</a>
+                        </div>
+                        <div class="order_status">
+                            <span class="status">Ожидает визита</span>
+                        </div>
+
+                    </div>
+                    <div class="service_history-block">
+                        <h3 class="personal_info-title">История обслуживания</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Автомобиль</th>
+                                    <th>Работы</th>
+                                    <th>Сумма</th>
+                                    <th>Статус</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>10.05.2026</td>
+                                        <td>Toyota Camry (А123АА77)</td>
+                                        <td>Диагностика ходовой</td>
+                                        <td>1 500 ₽</td>
+                                        <td> <span class="status_badge"> Выполнено</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.11.2025</td>
+                                        <td>Toyota Camry (А123АА77)</td>
+                                        <td>Замена тормозных колодок</td>
+                                        <td>5 200 ₽</td>
+                                        <td> <span class="status_badge"> Выполнено</span></td>
+                                    </tr>
+                                       <tr>
+                                        <td>14.07.2025</td>
+                                        <td>Toyota Camry (А123АА77)</td>
+                                        <td>Плановое ТО 60 000 км</td>
+                                        <td>12 800 ₽</td>
+                                        <td> <span class="status_badge">Выполнено</span> </td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        
+                        </table>
+                        <div class="service_history-btn">
+                            <a href="#" class=" btn service_history-order">Новая запись на СТО</a>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section> 
+        <!--Footer-->
+        
+        <footer class="footer">
+          <div class="container">
+            <div class="footer_content">
+              <div class="footer_logo">
+                <a class="logotype footer_name"
+                  >PRO <span class="logo">AUTO</span></a
+                >
+                <p class="footer_logo-text">
+                  Комплексное обслуживание<br />
+                  автомобилей на высшем уровне.
+                </p>
+              </div>
+              <div class="footer_nav">
+                <h3 class="footer_subtitle">Навигация</h3>
+                <ul class="footer_nav-list list-reset">
+                  <li class="footer_nav-item">
+                    <a href="index.html#index" class="footer_nav-link">Главная</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="services.html#services" class="footer_nav-link"
+                      >Услуги СТО</a
+                    >
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="shop.html#shop" class="footer_nav-link">Магазин запчастей</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="contacts.html#contacts" class="footer_nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_nav">
+                <h3 class="footer_subtitle">Для Клиентов</h3>
+                <ul class="footer_nav-list list-reset">
+                  <li class="footer_nav-item">
+                    <a href="account.html#account" class="footer_nav-link">Личный кабинет</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="services.html#services" class="footer_nav-link">Онлайн запись</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="shop.html#shop" class="footer_nav-link">Оптовым покупателям</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="#" class="footer_nav-link invisible_link">--</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="footer_nav">
+                <h3 class="footer_subtitle">Контакты</h3>
+                <ul class="footer_nav-list list-reset">
+                  <li class="footer_nav-item">
+                    <a href="#" class="footer_nav-link address_link"
+                      >ул. Моторная, 10, г. Москва</a
+                    >
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="#" class="footer_nav-link phone_link">+7 (495) 123-45-67</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="#" class="footer_nav-link email_link">info@proauto.ru</a>
+                  </li>
+                  <li class="footer_nav-item">
+                    <a href="#" class="footer_nav-link invisible_link">--</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer_copy">
+            &copy;2026 PRO AUTO. Все права защищены. Только HTML и CSS.
+          </div>
+        </footer>
+
+    </main>
+  </body>
+</html>

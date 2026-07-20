@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Настройки профиля I PRO AUTO</title>
+    <title>Заказы запчастей I PRO AUTO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body class="account_page">
+  <body class="order_block-page">
     <header class="header">
       <div class="container header_container">
         <a class="logotype">PRO <span class="logo">AUTO</span></a>
@@ -37,10 +37,11 @@
             </li>
           </ul>
         </nav>
-        <a href="account.html#account" class="header_account account_pink">Личный кабинет</a>
+        <a href="account.html#account" class="header_account account_pink"
+          >Личный кабинет</a
+        >
       </div>
     </header>
-
     <main class="main">
       <section id="account" class="account">
         <div class="container">
@@ -56,7 +57,11 @@
 
                 <ul class="account_list list-reset">
                   <li class="account_item">
-                    <a href="service-history.html#service_history" class="account_link">История обслуживания</a>
+                    <a
+                      href="service-history.html#service_history"
+                      class="account_link"
+                      >История обслуживания</a
+                    >
                   </li>
                   <li class="account_item">
                     <a href="order_block.html#order_block" class="account_link">Заказы запчастей</a>
@@ -65,123 +70,82 @@
                     <a href="garage.html#garage_block" class="account_link">Мои автомобили</a>
                   </li>
                   <li class="account_item">
-                    <a href="account.html#account" class="account_link">Настройки профиля </a>
+                    <a href="account.html#account" class="account_link"
+                      >Настройки профиля
+                    </a>
                   </li>
                   <li class="account_item">
                     <a href="index.html#index" class="account_link account_exit">Выйти </a>
                   </li>
                 </ul>
               </aside>
-              <div class="main_box">
-                <h2 class="main_box-title">Настройки профиля</h2>
-                <div class="personal_info">
-                  <h3 class="personal_info-title">Личные данные</h3>
-                  <form action="#">
-                    <div class="form_rows">
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="name"
-                          >ФИО</label
-                        >
-                        <input
-                          class="input_row"
-                          type="name"
-                          name="name"
-                          placeholder="Иванов Иван Иванович"
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="phone"
-                          >Телефон</label
-                        >
-                        <input
-                          class="input_row"
-                          type="tel"
-                          name="phone"
-                          placeholder="+7(999) 567 78 99"
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="email"
-                          >E-mail</label
-                        >
-                        <input
-                          class="input_row"
-                          type="email"
-                          name="email"
-                          placeholder="example@google.com"
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="text"
-                          >Город</label
-                        >
-                        <input
-                          class="input_row"
-                          type="text"
-                          name="text"
-                          placeholder="Москва"
-                        />
-                      </div>
-                      <div class="form_group-button">
-                        <a href="#" class="btn form_group-button--link"
-                          >Сохранить изменения</a
-                        >
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="personal_info">
-                  <h3 class="personal_info-title">Изменение пароля</h3>
-                  <form action="#">
-                    <div class="form_rows">
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password"
-                          >Текущий пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="empty_grid_row"></div>
 
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password"
-                          >Новый пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="form_group">
-                        <label class="lable_name personal_name" for="password">
-                          Подтвердите пароль</label
-                        >
-                        <input
-                          class="input_row"
-                          type="password"
-                          name="password"
-                          required
-                        />
-                      </div>
-                      <div class="rassword_button">
-                        <a href="" class="btn password_btn">Обновить пароль</a>
-                      </div>
-                    </div>
-                  </form>
+              <!--Order-->
+              <div id="order_block" class="order_block">
+                <div class="order_top">
+                    <h3 class="order_top-title">История заказов</h3>
+                    <a href="#" class="btn order_top-btn">Новый заказ</a>
                 </div>
+                <div class="service_sto order_history-top">
+                    <div class="order_history">
+                        <p class="service_plan">Заказ № 4598-PA</p>
+                        <p class="service_job">Моторное масло 5W-30 (5л) - 1 шт, Масляный фильтр - 1 шт.</p>
+                        <span class="service_date">12 Июля 2026</span>
+                        <a href="#" class="service_history-button">Отменить заказ</a>
+                    </div>
+                    <div class="order_status">
+                        <span class="status_price order_price">5 150 ₽</span>
+                        <span class="status order_status-top">В сборке</span>
+                    </div>
+
+                </div>
+
+                <div class="order_history-block">
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>№ Заказа</th>
+                                <th>Дата</th>
+                                <th>Товары</th>
+                                <th>Сумма</th>
+                                <th>Статус</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td># 3412-PA</td>
+                                    <td>20.05.2026</td>
+                                    <td>Тормозные колодки (передние), Диски тормозные...</td>
+                                    <td>14 500 ₽</td>
+                                    <td> <span class="status_badge">Получен</span></td>
+                                </tr>
+                                <tr>
+                                    <td># 2901-PA</td>
+                                    <td>05.02.2026</td>
+                                    <td>Аккумулятор 60Ah 12V</td>
+                                    <td>7 200 ₽</td>
+                                    <td> <span class="status_badge"> Получен</span></td>
+                                </tr>
+                                   <tr>
+                                    <td># 1855-PA</td>
+                                    <td>14.11.2025</td>
+                                    <td>Антифриз G12+ (5л), Щетки стеклоочистителя...</td>
+                                    <td>3 100 ₽</td>
+                                    <td> <span class="status_badge">Получен</span> </td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    
+                    </table>
+                   
+                    
+                </div>
+                
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!--Footer-->
       <footer class="footer">
         <div class="container">
           <div class="footer_content">
