@@ -1441,7 +1441,7 @@ th {
     height: auto;
     padding: 20px 0;
     background-color: #161616;
-    padding: 40px 20px 30px 20px;
+    padding: 5px 20px 30px 20px;
     border-radius: 12px;
     top: 70px;
     z-index: 99990;
@@ -1533,5 +1533,43 @@ th {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  .form_rows {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  th,
+  td {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+  table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: auto;
+    word-break: break-word;
+  }
+  .service_plan {
+    font-size: 20px;
+  }
+  .status {
+    padding: 6px 4px;
+    font-size: 10px;
+  }
+  .order_top-title {
+    font-size: 18px;
+  }
+  .order_top-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .order_price {
+    font-size: 12px;
+  }
+  .order_history-top {
+    padding: 10px;
+  }
+  .order_block {
+    padding: 10px;
   }
 }
